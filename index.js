@@ -1,17 +1,19 @@
-var animal = 'dog'
+var animal = 'dog' //global, accessed anywhere
 
 function myAnimal() {
   return animal
 }
 
 function yourAnimal() {
+  y = 'cat'
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  return animal
+  return y
 }
 
 function add2(n) {
+  n = 337
   return n + two
 
   // Feel free to move things around!
@@ -26,4 +28,4 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = funkyFunction()
